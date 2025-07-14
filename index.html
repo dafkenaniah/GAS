@@ -6,6 +6,7 @@
     <meta name="description" content="Game Analysis System - AI-powered insights for game studios. Tested on AAA titles.">
     <title>Game Analysis System</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
@@ -91,6 +92,41 @@
 <footer class="bg-primary text-white text-center p-4">
     &copy; 2025 N Da Rain Technologies LLC — All rights reserved.
 </footer>
+
+<script>
+(function ($) {
+    'use strict';
+
+    // Preloader fade out
+    $(window).on('load', function () {
+        $('.preloader').fadeOut(100);
+    });
+
+    // Sticky Navigation
+    $(window).scroll(function () {
+        if ($('.navigation').offset()?.top > 50) {
+            $('.navigation').addClass('nav-bg');
+        } else {
+            $('.navigation').removeClass('nav-bg');
+        }
+    });
+
+    // Navbar Burger Toggle (for mobile if needed)
+    $('.navbar-burger').click(function () {
+        $(this).toggleClass('is-active');
+        $('.navbar-menu').toggleClass('is-active');
+    });
+
+    // Smooth Scroll for internal links
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset()?.top - 60
+        }, 500);
+    });
+
+})(jQuery);
+</script>
 
 </body>
 </html>
