@@ -286,6 +286,176 @@
             opacity: 0.9;
         }
 
+        /* Gallery Section */
+        .gallery {
+            padding: 6rem 0;
+            background: var(--light);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background: var(--white);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: var(--white);
+            padding: 2rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        .gallery-overlay h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-overlay p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Modal for full-size images */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: var(--white);
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 10001;
+        }
+
+        .modal-close:hover {
+            opacity: 0.7;
+        }
+
+        /* Videos Section */
+        .videos {
+            padding: 6rem 0;
+            background: var(--white);
+        }
+
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .video-item {
+            background: var(--light);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .video-item:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow);
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-info {
+            padding: 2rem;
+            background: var(--white);
+        }
+
+        .video-info h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .video-info p {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
         /* Pricing */
         .pricing {
             padding: 6rem 0;
@@ -417,6 +587,25 @@
                 grid-template-columns: 1fr;
             }
 
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 1.5rem;
+            }
+
+            .gallery-item img {
+                height: 200px;
+            }
+
+            .videos-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .video-item {
+                margin: 0 auto;
+                max-width: 500px;
+            }
+
             .container {
                 padding: 0 1rem;
             }
@@ -471,6 +660,8 @@
             <div class="logo">Game Analysis System</div>
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#videos">Videos</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -553,6 +744,136 @@
                 <div class="stat animate-on-scroll">
                     <span class="stat-number">80%</span>
                     <span class="stat-label">Faster Reporting</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">See It In Action</h2>
+            <p class="section-subtitle animate-on-scroll">Real screenshots from our Game Analysis System in production</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item animate-on-scroll">
+                    <img src="Screenshot 2025-07-14 231120.png" alt="Game Analysis Dashboard Overview" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Dashboard Overview</h3>
+                        <p>Executive KPI dashboard showing real-time project health metrics</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item animate-on-scroll">
+                    <img src="Screenshot 2025-07-14 113203.png" alt="Bug Analysis Interface" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Bug Analysis</h3>
+                        <p>AI-powered bug categorization and priority assignment</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item animate-on-scroll">
+                    <img src="Screenshot 2025-07-14 113221.png" alt="Root Cause Analysis" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Root Cause Analysis</h3>
+                        <p>Intelligent pattern recognition for preventing repeat issues</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item animate-on-scroll">
+                    <img src="Screenshot 2025-07-14 113243.png" alt="Reporting System" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>One-Click Reports</h3>
+                        <p>Professional HTML reports generated instantly</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item animate-on-scroll">
+                    <img src="Screenshot 2025-07-14 192405.png" alt="Budget Analysis" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Budget Optimization</h3>
+                        <p>AI-powered budget analysis and cost prediction tools</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item animate-on-scroll">
+                    <img src="Screenshot 2025-07-14 222957.png" alt="Data Integration" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Data Integration</h3>
+                        <p>Seamless JIRA and CSV integration for existing workflows</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item animate-on-scroll">
+                    <img src="Screenshot 2025-07-14 224920.png" alt="Analytics Dashboard" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Advanced Analytics</h3>
+                        <p>Deep insights and trend analysis for better decision making</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item animate-on-scroll">
+                    <img src="Screenshot 2025-07-14 231039.png" alt="System Configuration" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>System Configuration</h3>
+                        <p>Flexible setup options tailored to your studio's needs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="videos" id="videos">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Watch It In Action</h2>
+            <p class="section-subtitle animate-on-scroll">See live demonstrations of our Game Analysis System</p>
+            
+            <div class="videos-grid">
+                <div class="video-item animate-on-scroll">
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/TeW2XX4OqFU" 
+                            title="Game Analysis System Demo 1"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>System Overview & Features</h3>
+                        <p>Complete walkthrough of the Game Analysis System's core functionality and user interface</p>
+                    </div>
+                </div>
+                
+                <div class="video-item animate-on-scroll">
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/44Jo2Yd1Uio" 
+                            title="Game Analysis System Demo 2"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>AI-Powered Bug Analysis</h3>
+                        <p>Live demonstration of automated bug categorization and root cause analysis features</p>
+                    </div>
+                </div>
+                
+                <div class="video-item animate-on-scroll">
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/0pRsilVBbJc" 
+                            title="Game Analysis System Demo 3"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Reporting & Dashboard Features</h3>
+                        <p>Executive dashboards, KPI tracking, and one-click HTML report generation in action</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -697,6 +1018,51 @@
             } else {
                 header.style.background = 'rgba(255, 255, 255, 0.95)';
                 header.style.boxShadow = 'none';
+            }
+        });
+
+        // Gallery modal functionality
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const modal = document.createElement('div');
+        modal.className = 'modal';
+        modal.innerHTML = `
+            <span class="modal-close">&times;</span>
+            <div class="modal-content">
+                <img src="" alt="">
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        const modalImg = modal.querySelector('img');
+        const modalClose = modal.querySelector('.modal-close');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img');
+                modalImg.src = img.src;
+                modalImg.alt = img.alt;
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        modalClose.addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.style.display === 'block') {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
             }
         });
     </script>
