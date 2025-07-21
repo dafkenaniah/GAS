@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Agile Lens - AI-powered risk management and bug analysis engine. AAA gaming validated, enterprise-ready platform for immediate acquisition.">
-    <title>Agile Lens | AI-Powered Risk Management & Bug Analysis Platform</title>
+    <meta name="description" content="Agile Lens - AI-powered bug analysis platform. AAA gaming validated, enterprise-ready, available for acquisition.">
+    <title>Agile Lens | AI-Powered Bug Analysis Platform - Strategic Acquisition Opportunity</title>
     <style>
         * {
             margin: 0;
@@ -127,15 +127,15 @@
         }
 
         .hero-badge {
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(99, 102, 241, 0.2);
+            color: var(--accent);
             padding: 0.5rem 1.5rem;
             border-radius: 50px;
             font-size: 0.9rem;
             font-weight: 600;
             margin-bottom: 2rem;
             display: inline-block;
-            animation: fadeInUp 1s ease-out;
+            border: 1px solid rgba(99, 102, 241, 0.3);
         }
 
         .hero-title {
@@ -146,20 +146,20 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            animation: fadeInUp 1s ease-out 0.2s both;
+            animation: fadeInUp 1s ease-out;
         }
 
         .hero-subtitle {
             font-size: 1.5rem;
             margin-bottom: 3rem;
             opacity: 0.9;
-            animation: fadeInUp 1s ease-out 0.4s both;
+            animation: fadeInUp 1s ease-out 0.2s both;
         }
 
         .hero-cta {
             display: inline-flex;
             gap: 1rem;
-            animation: fadeInUp 1s ease-out 0.6s both;
+            animation: fadeInUp 1s ease-out 0.4s both;
         }
 
         @keyframes fadeInUp {
@@ -209,91 +209,25 @@
             transform: translateY(-2px);
         }
 
-        .btn-outline {
-            background: transparent;
-            color: var(--primary);
-            border: 2px solid var(--primary);
-        }
-
-        .btn-outline:hover {
-            background: var(--primary);
-            color: var(--white);
-            transform: translateY(-2px);
-        }
-
         /* Validation Section */
         .validation {
             padding: 6rem 0;
             background: var(--white);
-        }
-
-        .validation-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .validation-text h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            background: var(--gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .validation-text p {
-            color: var(--gray);
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-        }
-
-        .validation-stats {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-        }
-
-        .stat-item {
             text-align: center;
-            padding: 1.5rem;
-            background: var(--light);
-            border-radius: 12px;
         }
 
-        .stat-number {
-            font-size: 2rem;
-            font-weight: 800;
-            color: var(--primary);
-            display: block;
-        }
-
-        .stat-label {
+        .validation-badge {
+            background: var(--gradient);
+            color: var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
             font-size: 0.9rem;
-            color: var(--gray);
-            margin-top: 0.5rem;
-        }
-
-        .validation-image {
-            position: relative;
-        }
-
-        .validation-image img {
-            width: 100%;
-            border-radius: 20px;
-            box-shadow: var(--shadow);
-        }
-
-        /* Platform Features */
-        .features {
-            padding: 6rem 0;
-            background: var(--light);
+            font-weight: 600;
+            margin-bottom: 2rem;
+            display: inline-block;
         }
 
         .section-title {
-            text-align: center;
             font-size: 3rem;
             font-weight: 700;
             margin-bottom: 1rem;
@@ -304,10 +238,87 @@
         }
 
         .section-subtitle {
-            text-align: center;
             font-size: 1.2rem;
             color: var(--gray);
             margin-bottom: 4rem;
+        }
+
+        /* Video Section */
+        .video-section {
+            padding: 6rem 0;
+            background: var(--light);
+            text-align: center;
+        }
+
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+        }
+
+        /* Screenshots Gallery */
+        .screenshots {
+            padding: 6rem 0;
+            background: var(--white);
+        }
+
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .screenshot-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(99, 102, 241, 0.1);
+        }
+
+        .screenshot-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .screenshot-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .screenshot-info {
+            padding: 1.5rem;
+        }
+
+        .screenshot-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+
+        .screenshot-description {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        /* Feature Cards */
+        .features {
+            padding: 6rem 0;
+            background: var(--light);
         }
 
         .features-grid {
@@ -349,143 +360,97 @@
             line-height: 1.8;
         }
 
-        /* Platform Screenshots */
-        .screenshots {
-            padding: 6rem 0;
-            background: var(--white);
-        }
-
-        .screenshots-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 3rem;
-            margin-top: 3rem;
-        }
-
-        .screenshot-item {
-            text-align: center;
-        }
-
-        .screenshot-item img {
-            width: 100%;
-            border-radius: 16px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-            transition: transform 0.3s ease;
-        }
-
-        .screenshot-item:hover img {
-            transform: scale(1.05);
-        }
-
-        .screenshot-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-top: 1rem;
-            color: var(--dark);
-        }
-
-        .screenshot-description {
-            color: var(--gray);
-            margin-top: 0.5rem;
-        }
-
-        /* ROI Section */
-        .roi {
+        /* Stats Section */
+        .stats {
             padding: 6rem 0;
             background: var(--gradient);
             color: var(--white);
         }
 
-        .roi-grid {
+        .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 3rem;
             text-align: center;
         }
 
-        .roi-item h3 {
-            font-size: 2.5rem;
+        .stat-number {
+            font-size: 3.5rem;
             font-weight: 800;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
+            display: block;
         }
 
-        .roi-item p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
-        /* Acquisition */
-        .acquisition {
-            padding: 6rem 0;
-            background: var(--dark);
-            color: var(--white);
-            text-align: center;
-        }
-
-        .acquisition h2 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--white) 0%, var(--accent) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .acquisition p {
+        .stat-label {
             font-size: 1.2rem;
             opacity: 0.9;
-            margin-bottom: 3rem;
         }
 
-        .pricing-box {
+        /* Acquisition Section */
+        .acquisition {
+            padding: 6rem 0;
             background: var(--white);
-            color: var(--dark);
+        }
+
+        .acquisition-card {
+            background: var(--white);
             border-radius: 20px;
             padding: 3rem;
+            text-align: center;
+            box-shadow: var(--shadow);
             max-width: 600px;
             margin: 0 auto;
-            box-shadow: var(--shadow-lg);
+            border: 3px solid transparent;
+            background-clip: padding-box;
             position: relative;
         }
 
-        .pricing-badge {
+        .acquisition-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            padding: 3px;
+            background: var(--gradient);
+            border-radius: 20px;
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+            -webkit-mask-composite: xor;
+        }
+
+        .acquisition-badge {
             background: var(--gradient);
             color: var(--white);
-            padding: 0.5rem 1.5rem;
+            padding: 0.5rem 1rem;
             border-radius: 50px;
             font-size: 0.9rem;
             font-weight: 600;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             display: inline-block;
         }
 
-        .pricing-price {
-            font-size: 3.5rem;
+        .acquisition-price {
+            font-size: 3rem;
             font-weight: 800;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             background: var(--gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
-        .pricing-details {
-            text-align: left;
-            margin: 2rem 0;
-        }
-
-        .pricing-details ul {
+        .acquisition-features {
             list-style: none;
+            margin: 2rem 0;
+            text-align: left;
         }
 
-        .pricing-details li {
+        .acquisition-features li {
             padding: 0.5rem 0;
             position: relative;
             padding-left: 2rem;
         }
 
-        .pricing-details li::before {
+        .acquisition-features li::before {
             content: '✓';
             position: absolute;
             left: 0;
@@ -493,47 +458,64 @@
             font-weight: bold;
         }
 
-        /* Contact */
+        /* Contact Section */
         .contact {
             padding: 6rem 0;
-            background: var(--light);
+            background: var(--dark);
+            color: var(--white);
             text-align: center;
         }
 
         .contact-info {
-            background: var(--white);
-            border-radius: 20px;
-            padding: 3rem;
             max-width: 600px;
             margin: 0 auto;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
-        .contact-info h3 {
+        .contact-email {
             font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--dark);
-        }
-
-        .contact-info a {
-            color: var(--primary);
+            color: var(--accent);
             text-decoration: none;
             font-weight: 600;
         }
 
-        .contact-info a:hover {
-            text-decoration: underline;
+        .contact-email:hover {
+            color: var(--white);
         }
 
         /* Footer */
         .footer {
-            background: var(--dark);
+            background: var(--dark-light);
             color: var(--white);
             padding: 3rem 0;
             text-align: center;
         }
 
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .footer-section a {
+            color: var(--white);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            opacity: 1;
+        }
+
         .footer-bottom {
+            border-top: 1px solid var(--dark);
+            padding-top: 2rem;
             opacity: 0.6;
         }
 
@@ -555,16 +537,17 @@
                 font-size: 2rem;
             }
 
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-
+            .features-grid,
             .screenshots-grid {
                 grid-template-columns: 1fr;
             }
 
             .container {
                 padding: 0 1rem;
+            }
+
+            .video-container iframe {
+                height: 250px;
             }
         }
 
@@ -618,8 +601,8 @@
             <ul class="nav-links">
                 <li><a href="#validation">Validation</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#platform">Platform</a></li>
                 <li><a href="#acquisition">Acquisition</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -627,12 +610,12 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">AAA Gaming Validated • Enterprise Ready • Patent Pending</div>
-                <h1 class="hero-title">AI-Powered Risk Management & Bug Analysis Platform</h1>
-                <p class="hero-subtitle">Validated with 10,000+ AAA gaming bugs. Proven risk prediction. Ready for immediate acquisition.</p>
+                <div class="hero-badge">AAA Gaming Industry Validated • Enterprise Ready</div>
+                <h1 class="hero-title">AI-Powered Bug Analysis Platform</h1>
+                <p class="hero-subtitle">Validated with 10,000+ AAA gaming bugs • Risk prediction proven • Ready for acquisition</p>
                 <div class="hero-cta">
-                    <a href="#acquisition" class="btn btn-primary">View Acquisition Terms</a>
-                    <a href="#validation" class="btn btn-secondary">See Validation</a>
+                    <a href="#contact" class="btn btn-primary">Strategic Acquisition Opportunity</a>
+                    <a href="#validation" class="btn btn-secondary">View Validation</a>
                 </div>
             </div>
         </div>
@@ -640,144 +623,247 @@
 
     <section class="validation" id="validation">
         <div class="container">
-            <div class="validation-grid">
-                <div class="validation-text">
-                    <h2 class="animate-on-scroll">AAA Gaming Industry Validated</h2>
-                    <p class="animate-on-scroll">Agile Lens has been battle-tested with over 10,000 bugs from AAA gaming titles, successfully identifying risk areas and budget anomalies that human analysts missed. This isn't theoretical AI - it's proven business intelligence.</p>
-                    <div class="validation-stats animate-on-scroll">
-                        <div class="stat-item">
-                            <span class="stat-number">10,000+</span>
-                            <span class="stat-label">Bugs Analyzed</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">AAA Title</span>
-                            <span class="stat-label">Validated</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">Risk Areas</span>
-                            <span class="stat-label">Predicted</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">Budget Anomalies</span>
-                            <span class="stat-label">Detected</span>
-                        </div>
-                    </div>
+            <div class="validation-badge">Battle-Tested Technology</div>
+            <h2 class="section-title animate-on-scroll">Proven in Production</h2>
+            <p class="section-subtitle animate-on-scroll">Not theoretical AI — validated with real AAA gaming data and confirmed business value</p>
+            
+            <div class="stats-grid">
+                <div class="stat animate-on-scroll" style="color: var(--dark);">
+                    <span class="stat-number">10,000+</span>
+                    <span class="stat-label">Bugs Analyzed</span>
                 </div>
-                <div class="validation-image animate-on-scroll">
-                    <img src="image1.png" alt="Agile Lens AI Gateway Configuration showing Anthropic Claude integration" />
+                <div class="stat animate-on-scroll" style="color: var(--dark);">
+                    <span class="stat-number">✓</span>
+                    <span class="stat-label">Risk Areas Identified</span>
+                </div>
+                <div class="stat animate-on-scroll" style="color: var(--dark);">
+                    <span class="stat-number">✓</span>
+                    <span class="stat-label">Budget Anomalies Detected</span>
+                </div>
+                <div class="stat animate-on-scroll" style="color: var(--dark);">
+                    <span class="stat-number">AAA</span>
+                    <span class="stat-label">Gaming Industry Validated</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="features" id="features">
+    <section class="video-section">
         <div class="container">
-            <h2 class="section-title animate-on-scroll">Enterprise-Grade AI Platform</h2>
-            <p class="section-subtitle animate-on-scroll">The world's first AI platform that transforms bug data into predictive business intelligence</p>
+            <h2 class="section-title animate-on-scroll">See It In Action</h2>
+            <p class="section-subtitle animate-on-scroll">Watch the full platform demonstration and capabilities</p>
+            
+            <div class="video-container animate-on-scroll">
+                <iframe src="https://www.youtube.com/embed/9Da6s_WuSzI" 
+                        title="Agile Lens Platform Demo" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="screenshots" id="features">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Enterprise-Grade Platform</h2>
+            <p class="section-subtitle animate-on-scroll">Advanced AI configuration, automation, training, and analytics capabilities</p>
+            
+            <div class="screenshots-grid">
+                <div class="screenshot-card animate-on-scroll">
+                    <img src="./agile-lens-1.png" alt="AI Gateway Configuration">
+                    <div class="screenshot-info">
+                        <h3 class="screenshot-title">Universal AI Gateway</h3>
+                        <p class="screenshot-description">Configure multiple AI providers including Anthropic Claude, OpenAI, Gemini, and Azure with custom parameters</p>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card animate-on-scroll">
+                    <img src="./agile-lens-2.png" alt="Data Processing Settings">
+                    <div class="screenshot-info">
+                        <h3 class="screenshot-title">Advanced Data Processing</h3>
+                        <p class="screenshot-description">Intelligent data validation, caching, and batch processing with real-time performance monitoring</p>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card animate-on-scroll">
+                    <img src="./agile-lens-3.png" alt="Smart Automation Rules">
+                    <div class="screenshot-info">
+                        <h3 class="screenshot-title">Smart Automation Engine</h3>
+                        <p class="screenshot-description">Create intelligent rules for duplicate detection, notifications, and automated workflows</p>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card animate-on-scroll">
+                    <img src="./agile-lens-4.png" alt="Scheduled Tasks">
+                    <div class="screenshot-info">
+                        <h3 class="screenshot-title">Enterprise Integrations</h3>
+                        <p class="screenshot-description">Slack, Email, Microsoft Teams, GitHub, and webhook integrations with scheduled automation</p>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card animate-on-scroll">
+                    <img src="./agile-lens-5.png" alt="Automation Analytics">
+                    <div class="screenshot-info">
+                        <h3 class="screenshot-title">Automation Analytics</h3>
+                        <p class="screenshot-description">Track automation performance, time savings, success rates, and cost optimization metrics</p>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card animate-on-scroll">
+                    <img src="./agile-lens-6.png" alt="AI Model Training">
+                    <div class="screenshot-info">
+                        <h3 class="screenshot-title">AI Model Training</h3>
+                        <p class="screenshot-description">Upload training data and configure custom ML models for enhanced analysis capabilities</p>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card animate-on-scroll">
+                    <img src="./agile-lens-7.png" alt="Training Control">
+                    <div class="screenshot-info">
+                        <h3 class="screenshot-title">Training Management</h3>
+                        <p class="screenshot-description">Real-time training control with performance metrics, validation results, and model deployment</p>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card animate-on-scroll">
+                    <img src="./agile-lens-8.png" alt="Model Management">
+                    <div class="screenshot-info">
+                        <h3 class="screenshot-title">Model Lifecycle</h3>
+                        <p class="screenshot-description">Active model management with accuracy tracking, version control, and production deployment</p>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card animate-on-scroll">
+                    <img src="./agile-lens-9.png" alt="Budget Analysis">
+                    <div class="screenshot-info">
+                        <h3 class="screenshot-title">Budget Intelligence</h3>
+                        <p class="screenshot-description">Advanced budget analysis with ML insights, forecasting, and AI-powered recommendations</p>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card animate-on-scroll">
+                    <img src="./agile-lens-10.png" alt="Project Context">
+                    <div class="screenshot-info">
+                        <h3 class="screenshot-title">Project Context Engine</h3>
+                        <p class="screenshot-description">Comprehensive project profiling for enhanced AI analysis and business intelligence</p>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card animate-on-scroll">
+                    <img src="./agile-lens-11.png" alt="Advanced Analytics">
+                    <div class="screenshot-info">
+                        <h3 class="screenshot-title">Predictive Analytics</h3>
+                        <p class="screenshot-description">Deep insights and predictive analytics for bug patterns, trends, and risk management</p>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card animate-on-scroll">
+                    <img src="./agile-lens-12.png" alt="AI Analysis Interface">
+                    <div class="screenshot-info">
+                        <h3 class="screenshot-title">AI Analysis Hub</h3>
+                        <p class="screenshot-description">Compare reports, select AI prompts, and generate intelligent insights with analysis history</p>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card animate-on-scroll">
+                    <img src="./agile-lens-13.png" alt="Prompt Templates">
+                    <div class="screenshot-info">
+                        <h3 class="screenshot-title">Expert Prompt Library</h3>
+                        <p class="screenshot-description">Pre-built prompts for project health, risk assessment, budget forecasting, and competitive analysis</p>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card animate-on-scroll">
+                    <img src="./agile-lens-14.png" alt="Test Run Creation">
+                    <div class="screenshot-info">
+                        <h3 class="screenshot-title">TestRail Integration</h3>
+                        <p class="screenshot-description">Seamless test run creation with CSV processing and TestRail mapping capabilities</p>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card animate-on-scroll">
+                    <img src="./agile-lens-15.png" alt="JIRA Export">
+                    <div class="screenshot-info">
+                        <h3 class="screenshot-title">JIRA Export Engine</h3>
+                        <p class="screenshot-description">Advanced JIRA integration with JQL queries, TestRail connectivity, and automated exports</p>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card animate-on-scroll">
+                    <img src="./agile-lens-16.png" alt="Priority Reports">
+                    <div class="screenshot-info">
+                        <h3 class="screenshot-title">Priority Reporting</h3>
+                        <p class="screenshot-description">Generate comprehensive bug reports with priority analysis and multiple export formats</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Proven Business Value</h2>
+            <p class="section-subtitle animate-on-scroll">Real-world validation with quantified business impact</p>
             
             <div class="features-grid">
                 <div class="feature-card animate-on-scroll">
-                    <span class="feature-icon">🤖</span>
-                    <h3 class="feature-title">Universal AI Gateway</h3>
-                    <p class="feature-description">First platform supporting OpenAI, Anthropic, Gemini, Azure, and custom LLMs. Patent-pending architecture with validated prompt engineering.</p>
-                </div>
-                
-                <div class="feature-card animate-on-scroll">
-                    <span class="feature-icon">📊</span>
-                    <h3 class="feature-title">Predictive Risk Analytics</h3>
-                    <p class="feature-description">AI identifies problem areas before they become critical. Validated risk prediction from historical bug patterns and cycle analysis.</p>
+                    <span class="feature-icon">🎯</span>
+                    <h3 class="feature-title">Risk Prediction Validated</h3>
+                    <p class="feature-description">Successfully identified problem areas from historical patterns in AAA gaming data. Prevent million-dollar project overruns with early risk detection.</p>
                 </div>
                 
                 <div class="feature-card animate-on-scroll">
                     <span class="feature-icon">💰</span>
-                    <h3 class="feature-title">Budget Intelligence</h3>
-                    <p class="feature-description">Detects cost anomalies and resource optimization opportunities. Prevents million-dollar project overruns through early identification.</p>
+                    <h3 class="feature-title">Budget Anomaly Detection</h3>
+                    <p class="feature-description">Proven ability to detect cost overruns and resource allocation issues. Transform QA data into strategic financial intelligence.</p>
                 </div>
                 
                 <div class="feature-card animate-on-scroll">
-                    <span class="feature-icon">🔗</span>
-                    <h3 class="feature-title">Enterprise Integration</h3>
-                    <p class="feature-description">Native JIRA and TestRail connectivity. Cross-platform desktop deployment with comprehensive automation and workflow management.</p>
+                    <span class="feature-icon">🤖</span>
+                    <h3 class="feature-title">Universal AI Gateway</h3>
+                    <p class="feature-description">First platform supporting OpenAI, Anthropic, Gemini, Azure, and custom LLMs. Patent-pending architecture with 18-month technical lead.</p>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <span class="feature-icon">📊</span>
+                    <h3 class="feature-title">Enterprise Scalability</h3>
+                    <p class="feature-description">Processed 10,000+ complex bugs in production environment. Proven performance with enterprise-scale data volumes.</p>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <span class="feature-icon">🔧</span>
+                    <h3 class="feature-title">Complete Platform</h3>
+                    <p class="feature-description">JIRA/TestRail integration, cross-platform desktop app, automation engine, and comprehensive reporting — ready for immediate deployment.</p>
                 </div>
                 
                 <div class="feature-card animate-on-scroll">
                     <span class="feature-icon">📈</span>
-                    <h3 class="feature-title">Advanced Analytics</h3>
-                    <p class="feature-description">ML-powered pattern recognition, duplicate detection, and root cause analysis. Generate executive dashboards and KPI tracking.</p>
-                </div>
-                
-                <div class="feature-card animate-on-scroll">
-                    <span class="feature-icon">⚡</span>
-                    <h3 class="feature-title">Automation Engine</h3>
-                    <p class="feature-description">Smart rules, scheduled tasks, and integrations with Slack, email, GitHub, and custom webhooks. Proven 98.5% success rate.</p>
+                    <h3 class="feature-title">Predictive Intelligence</h3>
+                    <p class="feature-description">ML backend for pattern recognition, custom model training, and business intelligence that no competitor offers.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="screenshots" id="platform">
+    <section class="stats">
         <div class="container">
-            <h2 class="section-title animate-on-scroll">Platform Capabilities</h2>
-            <p class="section-subtitle animate-on-scroll">See the enterprise-grade features that power predictive business intelligence</p>
-            
-            <div class="screenshots-grid">
-                <div class="screenshot-item animate-on-scroll">
-                    <img src="image2.png" alt="Data Processing Settings with validation and caching options" />
-                    <h3 class="screenshot-title">Data Processing Engine</h3>
-                    <p class="screenshot-description">Advanced data validation, caching, and batch processing for enterprise-scale operations</p>
+            <div class="stats-grid">
+                <div class="stat animate-on-scroll">
+                    <span class="stat-number">$85K</span>
+                    <span class="stat-label">Technology Platform Rights</span>
                 </div>
-                
-                <div class="screenshot-item animate-on-scroll">
-                    <img src="image3.png" alt="Automation and Workflows with smart rules and duplicate detection" />
-                    <h3 class="screenshot-title">Smart Automation</h3>
-                    <p class="screenshot-description">Intelligent workflows with duplicate detection, custom rules, and automated notifications</p>
+                <div class="stat animate-on-scroll">
+                    <span class="stat-number">7.5%</span>
+                    <span class="stat-label">Lifetime Participation</span>
                 </div>
-                
-                <div class="screenshot-item animate-on-scroll">
-                    <img src="image4.png" alt="Scheduled Tasks showing daily and weekly automation" />
-                    <h3 class="screenshot-title">Automated Scheduling</h3>
-                    <p class="screenshot-description">Scheduled reports, analytics, and integrations with Slack, email, and external systems</p>
+                <div class="stat animate-on-scroll">
+                    <span class="stat-number">$400M+</span>
+                    <span class="stat-label">Revenue Potential</span>
                 </div>
-                
-                <div class="screenshot-item animate-on-scroll">
-                    <img src="image6.png" alt="AI Model Training interface with data management" />
-                    <h3 class="screenshot-title">AI Model Training</h3>
-                    <p class="screenshot-description">Custom ML model training for bug classification, risk prediction, and anomaly detection</p>
-                </div>
-                
-                <div class="screenshot-item animate-on-scroll">
-                    <img src="image9.png" alt="Budget Analysis with comprehensive project context" />
-                    <h3 class="screenshot-title">Budget Intelligence</h3>
-                    <p class="screenshot-description">AI-powered budget analysis, forecasting, and optimization with project context</p>
-                </div>
-                
-                <div class="screenshot-item animate-on-scroll">
-                    <img src="image14.png" alt="AI Analysis with pre-built prompts for business intelligence" />
-                    <h3 class="screenshot-title">AI Analysis Hub</h3>
-                    <p class="screenshot-description">50+ validated prompt templates for risk assessment, budget forecasting, and stakeholder reporting</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="roi">
-        <div class="container">
-            <div class="roi-grid">
-                <div class="roi-item animate-on-scroll">
-                    <h3>$1.5M-3.3M</h3>
-                    <p>Annual Customer Value<br>Validated ROI from risk prevention and optimization</p>
-                </div>
-                <div class="roi-item animate-on-scroll">
-                    <h3>450-850%</h3>
-                    <p>Customer ROI<br>Proven returns through budget anomaly prevention</p>
-                </div>
-                <div class="roi-item animate-on-scroll">
-                    <h3>$400M+</h3>
-                    <p>Revenue Potential<br>Conservative projection by Year 5</p>
-                </div>
-                <div class="roi-item animate-on-scroll">
-                    <h3>18 Months</h3>
-                    <p>Development Lead<br>First-mover advantage with patent-pending tech</p>
+                <div class="stat animate-on-scroll">
+                    <span class="stat-number">18 Months</span>
+                    <span class="stat-label">Development Head Start</span>
                 </div>
             </div>
         </div>
@@ -785,67 +871,84 @@
 
     <section class="acquisition" id="acquisition">
         <div class="container">
-            <h2 class="animate-on-scroll">Technology Acquisition Opportunity</h2>
-            <p class="animate-on-scroll">Complete platform rights with validated business intelligence capabilities</p>
+            <h2 class="section-title animate-on-scroll">Strategic Acquisition Opportunity</h2>
+            <p class="section-subtitle animate-on-scroll">Validated technology platform ready for immediate commercialization</p>
             
-            <div class="pricing-box animate-on-scroll">
-                <div class="pricing-badge">Strategic Partnership</div>
-                <div class="pricing-price">$85K</div>
-                <p style="margin-bottom: 2rem;">+ 7.5% Lifetime Value Participation</p>
+            <div class="acquisition-card animate-on-scroll">
+                <div class="acquisition-badge">Technology Platform Rights</div>
+                <div class="acquisition-price">$85,000</div>
+                <p>+ 7.5% lifetime participation in profits, exits, and IPO value</p>
                 
-                <div class="pricing-details">
-                    <h4 style="margin-bottom: 1rem;">Complete Technology Package:</h4>
-                    <ul>
-                        <li>Full source code and IP ownership</li>
-                        <li>AAA gaming validation case study</li>
-                        <li>50+ validated AI prompt templates</li>
-                        <li>Universal AI gateway (patent-pending)</li>
-                        <li>Enterprise integration modules</li>
-                        <li>ML analytics framework</li>
-                        <li>Complete documentation and architecture</li>
-                    </ul>
-                    
-                    <h4 style="margin: 2rem 0 1rem 0;">Lifetime Partnership:</h4>
-                    <ul>
-                        <li>7.5% of net profits after expenses</li>
-                        <li>7.5% of sale proceeds if acquired</li>
-                        <li>7.5% equity if platform goes public</li>
-                        <li>Ongoing technical support and innovation</li>
-                        <li>Platform evolution and optimization</li>
-                    </ul>
-                </div>
+                <ul class="acquisition-features">
+                    <li>Complete source code and IP ownership</li>
+                    <li>Universal AI Gateway (patent-pending)</li>
+                    <li>50+ validated AI prompt templates</li>
+                    <li>AAA gaming validation case study</li>
+                    <li>Risk management framework</li>
+                    <li>Budget intelligence algorithms</li>
+                    <li>Enterprise JIRA/TestRail integration</li>
+                    <li>Cross-platform desktop application</li>
+                    <li>ML training and analytics backend</li>
+                    <li>Automation and workflow engine</li>
+                    <li>Comprehensive documentation</li>
+                    <li>Lifetime technical support</li>
+                    <li>Ongoing platform evolution</li>
+                    <li>Market validation and proof points</li>
+                    <li>18+ months of development investment</li>
+                </ul>
                 
                 <div style="margin: 2rem 0; padding: 1.5rem; background: rgba(99, 102, 241, 0.1); border-radius: 12px; border-left: 4px solid var(--primary);">
-                    <p style="font-weight: 600; margin-bottom: 0.5rem;">✅ Immediate Competitive Advantage</p>
-                    <p style="font-size: 0.9rem; color: var(--gray);">Skip $240K-480K development costs and 18+ months of uncertain development. Proven validation with AAA gaming industry.</p>
+                    <p style="font-weight: 600; margin-bottom: 0.5rem;">🎯 Strategic Value Proposition</p>
+                    <p style="font-size: 0.9rem; color: var(--gray);">Skip $2M+ development costs and 18+ months of uncertain development. Acquire proven technology with validated business value and immediate market entry capability.</p>
                 </div>
                 
-                <a href="mailto:kennethdavis@ndarainent.com" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.5rem 3rem;">Schedule Acquisition Discussion</a>
+                <a href="#contact" class="btn btn-primary">Schedule Acquisition Discussion</a>
             </div>
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
-            <div class="contact-info animate-on-scroll">
-                <h3>Ready to Secure This Technology?</h3>
-                <p style="margin: 1rem 0;">Multiple strategic buyers are evaluating this opportunity</p>
-                <p><strong>Kenneth Davis</strong><br>
-                Founder & CTO, N Da Rain Technologies LLC</p>
-                <p>📧 <a href="mailto:kennethdavis@ndarainent.com">kennethdavis@ndarainent.com</a></p>
-                <p style="margin-top: 2rem; font-size: 0.9rem; color: var(--gray);">
-                    Private demos and technical documentation available upon NDA execution<br>
-                    Decision timeline: 45 days
-                </p>
+            <div class="contact-info">
+                <h2 class="section-title animate-on-scroll" style="color: var(--white);">Ready to Acquire This Platform?</h2>
+                <p class="section-subtitle animate-on-scroll" style="color: rgba(255,255,255,0.8);">Strategic buyers are evaluating this opportunity. First to commit secures the technology.</p>
+                
+                <div style="margin-top: 3rem;">
+                    <p style="margin-bottom: 1rem; font-size: 1.2rem;">Kenneth Davis</p>
+                    <p style="margin-bottom: 0.5rem;">Founder & CTO, N Da Rain Technologies LLC</p>
+                    <a href="mailto:kennethdavis@ndarainent.com" class="contact-email">kennethdavis@ndarainent.com</a>
+                    
+                    <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.1); border-radius: 12px;">
+                        <p style="font-weight: 600; margin-bottom: 0.5rem;">🔒 NDA Required for:</p>
+                        <p style="font-size: 0.9rem; opacity: 0.8;">• Complete technical documentation<br>• AAA validation case study details<br>• Financial projections and market analysis<br>• Private demo access and source code review</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Agile Lens</h3>
+                    <p>AI-powered bug analysis platform. AAA gaming validated, enterprise-ready, available for strategic acquisition.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Technology</h3>
+                    <p><a href="#validation">Validation Results</a></p>
+                    <p><a href="#features">Platform Features</a></p>
+                    <p><a href="https://youtu.be/9Da6s_WuSzI" target="_blank">Demo Video</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Acquisition</h3>
+                    <p><a href="#acquisition">Investment Terms</a></p>
+                    <p><a href="mailto:kennethdavis@ndarainent.com">Contact</a></p>
+                    <p><a href="#">NDA Request</a></p>
+                </div>
+            </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 N Da Rain Technologies LLC — Agile Lens Technology Platform</p>
-                <p>AAA Gaming Validated • Patent Pending • Enterprise Ready</p>
+                <p>&copy; 2025 N Da Rain Technologies LLC — All rights reserved. Strategic acquisition opportunity.</p>
             </div>
         </div>
     </footer>
@@ -917,25 +1020,12 @@
             }
         });
 
-        // Add dynamic content updates
-        document.addEventListener('DOMContentLoaded', function() {
-            // Update contact email links
-            const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
-            emailLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    // Track acquisition interest
-                    console.log('Acquisition interest logged');
-                });
-            });
-
-            // Add urgency indicators
-            const urgencyElements = document.querySelectorAll('.pricing-badge');
-            urgencyElements.forEach(element => {
-                const currentText = element.textContent;
-                if (currentText.includes('Strategic Partnership')) {
-                    element.innerHTML = '🔥 Strategic Partnership - Limited Time';
-                }
-            });
+        // Add click tracking for strategic analysis
+        document.addEventListener('click', function(e) {
+            if (e.target.matches('a[href="#contact"], .btn-primary')) {
+                // Track acquisition interest
+                console.log('Strategic acquisition interest tracked');
+            }
         });
     </script>
 </body>
