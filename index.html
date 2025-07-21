@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Game Analysis System - AI-powered insights for game studios. Tested on AAA titles.">
-    <title>Game Analysis System | AI-Powered Game Development Insights</title>
+    <meta name="description" content="Agile Lens - AI-powered risk management and bug analysis engine. AAA gaming validated, enterprise-ready platform for immediate acquisition.">
+    <title>Agile Lens | AI-Powered Risk Management & Bug Analysis Platform</title>
     <style>
         * {
             margin: 0;
@@ -126,6 +126,18 @@
             color: var(--white);
         }
 
+        .hero-badge {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            display: inline-block;
+            animation: fadeInUp 1s ease-out;
+        }
+
         .hero-title {
             font-size: 4rem;
             font-weight: 800;
@@ -134,20 +146,20 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            animation: fadeInUp 1s ease-out;
+            animation: fadeInUp 1s ease-out 0.2s both;
         }
 
         .hero-subtitle {
             font-size: 1.5rem;
             margin-bottom: 3rem;
             opacity: 0.9;
-            animation: fadeInUp 1s ease-out 0.2s both;
+            animation: fadeInUp 1s ease-out 0.4s both;
         }
 
         .hero-cta {
             display: inline-flex;
             gap: 1rem;
-            animation: fadeInUp 1s ease-out 0.4s both;
+            animation: fadeInUp 1s ease-out 0.6s both;
         }
 
         @keyframes fadeInUp {
@@ -197,10 +209,87 @@
             transform: translateY(-2px);
         }
 
-        /* Feature Cards */
-        .features {
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* Validation Section */
+        .validation {
             padding: 6rem 0;
             background: var(--white);
+        }
+
+        .validation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .validation-text h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .validation-text p {
+            color: var(--gray);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .validation-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--light);
+            border-radius: 12px;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin-top: 0.5rem;
+        }
+
+        .validation-image {
+            position: relative;
+        }
+
+        .validation-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        /* Platform Features */
+        .features {
+            padding: 6rem 0;
+            background: var(--light);
         }
 
         .section-title {
@@ -260,272 +349,180 @@
             line-height: 1.8;
         }
 
-        /* Stats Section */
-        .stats {
-            padding: 6rem 0;
-            background: var(--gradient);
-            color: var(--white);
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 0.5rem;
-            display: block;
-        }
-
-        .stat-label {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-
-        /* Gallery Section */
-        .gallery {
-            padding: 6rem 0;
-            background: var(--light);
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .gallery-item {
-            position: relative;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            cursor: pointer;
-            background: var(--white);
-        }
-
-        .gallery-item:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow);
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.05);
-        }
-
-        .gallery-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-            color: var(--white);
-            padding: 2rem;
-            transform: translateY(100%);
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-item:hover .gallery-overlay {
-            transform: translateY(0);
-        }
-
-        .gallery-overlay h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .gallery-overlay p {
-            font-size: 0.9rem;
-            opacity: 0.9;
-        }
-
-        /* Modal for full-size images */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 10000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            backdrop-filter: blur(5px);
-        }
-
-        .modal-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 12px;
-            overflow: hidden;
-        }
-
-        .modal-content img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-
-        .modal-close {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: var(--white);
-            font-size: 40px;
-            font-weight: bold;
-            cursor: pointer;
-            z-index: 10001;
-        }
-
-        .modal-close:hover {
-            opacity: 0.7;
-        }
-
-        /* Videos Section */
-        .videos {
+        /* Platform Screenshots */
+        .screenshots {
             padding: 6rem 0;
             background: var(--white);
         }
 
-        .videos-grid {
+        .screenshots-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 3rem;
             margin-top: 3rem;
         }
 
-        .video-item {
-            background: var(--light);
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
+        .screenshot-item {
+            text-align: center;
         }
 
-        .video-item:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow);
-        }
-
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-        }
-
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
+        .screenshot-item img {
             width: 100%;
-            height: 100%;
-            border: none;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
         }
 
-        .video-info {
-            padding: 2rem;
-            background: var(--white);
+        .screenshot-item:hover img {
+            transform: scale(1.05);
         }
 
-        .video-info h3 {
-            font-size: 1.5rem;
+        .screenshot-title {
+            font-size: 1.2rem;
             font-weight: 600;
-            margin-bottom: 1rem;
+            margin-top: 1rem;
             color: var(--dark);
         }
 
-        .video-info p {
+        .screenshot-description {
             color: var(--gray);
-            line-height: 1.6;
+            margin-top: 0.5rem;
         }
 
-        /* Pricing */
-        .pricing {
+        /* ROI Section */
+        .roi {
             padding: 6rem 0;
-            background: var(--light);
+            background: var(--gradient);
+            color: var(--white);
         }
 
-        .pricing-card {
+        .roi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            text-align: center;
+        }
+
+        .roi-item h3 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .roi-item p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Acquisition */
+        .acquisition {
+            padding: 6rem 0;
+            background: var(--dark);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .acquisition h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--white) 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .acquisition p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 3rem;
+        }
+
+        .pricing-box {
             background: var(--white);
+            color: var(--dark);
             border-radius: 20px;
             padding: 3rem;
-            text-align: center;
-            box-shadow: var(--shadow);
-            max-width: 500px;
+            max-width: 600px;
             margin: 0 auto;
-            border: 3px solid transparent;
-            background-clip: padding-box;
+            box-shadow: var(--shadow-lg);
             position: relative;
-        }
-
-        .pricing-card::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            padding: 3px;
-            background: var(--gradient);
-            border-radius: 20px;
-            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-            mask-composite: exclude;
-            -webkit-mask-composite: xor;
         }
 
         .pricing-badge {
             background: var(--gradient);
             color: var(--white);
-            padding: 0.5rem 1rem;
+            padding: 0.5rem 1.5rem;
             border-radius: 50px;
             font-size: 0.9rem;
             font-weight: 600;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
             display: inline-block;
         }
 
         .pricing-price {
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 800;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
             background: var(--gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
-        .pricing-features {
-            list-style: none;
-            margin: 2rem 0;
+        .pricing-details {
             text-align: left;
+            margin: 2rem 0;
         }
 
-        .pricing-features li {
+        .pricing-details ul {
+            list-style: none;
+        }
+
+        .pricing-details li {
             padding: 0.5rem 0;
             position: relative;
             padding-left: 2rem;
         }
 
-        .pricing-features li::before {
+        .pricing-details li::before {
             content: '✓';
             position: absolute;
             left: 0;
             color: var(--success);
             font-weight: bold;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 6rem 0;
+            background: var(--light);
+            text-align: center;
+        }
+
+        .contact-info {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 3rem;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
         }
 
         /* Footer */
@@ -536,32 +533,7 @@
             text-align: center;
         }
 
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-section h3 {
-            margin-bottom: 1rem;
-            color: var(--accent);
-        }
-
-        .footer-section a {
-            color: var(--white);
-            text-decoration: none;
-            opacity: 0.8;
-            transition: opacity 0.3s ease;
-        }
-
-        .footer-section a:hover {
-            opacity: 1;
-        }
-
         .footer-bottom {
-            border-top: 1px solid var(--dark-light);
-            padding-top: 2rem;
             opacity: 0.6;
         }
 
@@ -587,23 +559,8 @@
                 grid-template-columns: 1fr;
             }
 
-            .gallery-grid {
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 1.5rem;
-            }
-
-            .gallery-item img {
-                height: 200px;
-            }
-
-            .videos-grid {
+            .screenshots-grid {
                 grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .video-item {
-                margin: 0 auto;
-                max-width: 500px;
             }
 
             .container {
@@ -657,13 +614,12 @@
 
     <header class="header">
         <nav class="nav container">
-            <div class="logo">Game Analysis System</div>
+            <div class="logo">Agile Lens</div>
             <ul class="nav-links">
+                <li><a href="#validation">Validation</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#videos">Videos</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#platform">Platform</a></li>
+                <li><a href="#acquisition">Acquisition</a></li>
             </ul>
         </nav>
     </header>
@@ -671,11 +627,44 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">AI-Powered Game Development Insights</h1>
-                <p class="hero-subtitle">Built by a QA Lead, proven on AAA titles — now available for your studio</p>
+                <div class="hero-badge">AAA Gaming Validated • Enterprise Ready • Patent Pending</div>
+                <h1 class="hero-title">AI-Powered Risk Management & Bug Analysis Platform</h1>
+                <p class="hero-subtitle">Validated with 10,000+ AAA gaming bugs. Proven risk prediction. Ready for immediate acquisition.</p>
                 <div class="hero-cta">
-                    <a href="#contact" class="btn btn-primary">Partnership Opportunity</a>
-                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                    <a href="#acquisition" class="btn btn-primary">View Acquisition Terms</a>
+                    <a href="#validation" class="btn btn-secondary">See Validation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="validation" id="validation">
+        <div class="container">
+            <div class="validation-grid">
+                <div class="validation-text">
+                    <h2 class="animate-on-scroll">AAA Gaming Industry Validated</h2>
+                    <p class="animate-on-scroll">Agile Lens has been battle-tested with over 10,000 bugs from AAA gaming titles, successfully identifying risk areas and budget anomalies that human analysts missed. This isn't theoretical AI - it's proven business intelligence.</p>
+                    <div class="validation-stats animate-on-scroll">
+                        <div class="stat-item">
+                            <span class="stat-number">10,000+</span>
+                            <span class="stat-label">Bugs Analyzed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">AAA Title</span>
+                            <span class="stat-label">Validated</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">Risk Areas</span>
+                            <span class="stat-label">Predicted</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">Budget Anomalies</span>
+                            <span class="stat-label">Detected</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="validation-image animate-on-scroll">
+                    <img src="image1.png" alt="Agile Lens AI Gateway Configuration showing Anthropic Claude integration" />
                 </div>
             </div>
         </div>
@@ -683,388 +672,177 @@
 
     <section class="features" id="features">
         <div class="container">
-            <h2 class="section-title animate-on-scroll">Revolutionize Your Development Process</h2>
-            <p class="section-subtitle animate-on-scroll">Tested in live production environments — delivering insights that matter</p>
+            <h2 class="section-title animate-on-scroll">Enterprise-Grade AI Platform</h2>
+            <p class="section-subtitle animate-on-scroll">The world's first AI platform that transforms bug data into predictive business intelligence</p>
             
             <div class="features-grid">
                 <div class="feature-card animate-on-scroll">
-                    <span class="feature-icon">📊</span>
-                    <h3 class="feature-title">Automated Bug Analysis</h3>
-                    <p class="feature-description">Reduce manual triage by 60% with AI-powered bug data analysis. Smart categorization and priority assignment based on production patterns.</p>
+                    <span class="feature-icon">🤖</span>
+                    <h3 class="feature-title">Universal AI Gateway</h3>
+                    <p class="feature-description">First platform supporting OpenAI, Anthropic, Gemini, Azure, and custom LLMs. Patent-pending architecture with validated prompt engineering.</p>
                 </div>
                 
                 <div class="feature-card animate-on-scroll">
-                    <span class="feature-icon">📈</span>
-                    <h3 class="feature-title">Executive KPI Dashboards</h3>
-                    <p class="feature-description">Enhance transparency and executive confidence with real-time dashboards showing key performance indicators and project health.</p>
+                    <span class="feature-icon">📊</span>
+                    <h3 class="feature-title">Predictive Risk Analytics</h3>
+                    <p class="feature-description">AI identifies problem areas before they become critical. Validated risk prediction from historical bug patterns and cycle analysis.</p>
                 </div>
                 
                 <div class="feature-card animate-on-scroll">
                     <span class="feature-icon">💰</span>
-                    <h3 class="feature-title">Budget Analysis & Optimization</h3>
-                    <p class="feature-description">Cut budget overruns by up to 25% with AI-powered budget analysis and comparison tools. Predict costs before they spiral.</p>
+                    <h3 class="feature-title">Budget Intelligence</h3>
+                    <p class="feature-description">Detects cost anomalies and resource optimization opportunities. Prevents million-dollar project overruns through early identification.</p>
                 </div>
                 
                 <div class="feature-card animate-on-scroll">
-                    <span class="feature-icon">🤖</span>
-                    <h3 class="feature-title">Root Cause Analysis</h3>
-                    <p class="feature-description">Reduce repeat bugs by up to 40% with intelligent root cause analysis. Identify patterns and prevent future issues.</p>
+                    <span class="feature-icon">🔗</span>
+                    <h3 class="feature-title">Enterprise Integration</h3>
+                    <p class="feature-description">Native JIRA and TestRail connectivity. Cross-platform desktop deployment with comprehensive automation and workflow management.</p>
                 </div>
                 
                 <div class="feature-card animate-on-scroll">
-                    <span class="feature-icon">📤</span>
-                    <h3 class="feature-title">One-Click Reporting</h3>
-                    <p class="feature-description">Cut stakeholder reporting time by 80% with automated HTML reports. Professional presentations generated instantly.</p>
+                    <span class="feature-icon">📈</span>
+                    <h3 class="feature-title">Advanced Analytics</h3>
+                    <p class="feature-description">ML-powered pattern recognition, duplicate detection, and root cause analysis. Generate executive dashboards and KPI tracking.</p>
                 </div>
                 
                 <div class="feature-card animate-on-scroll">
-                    <span class="feature-icon">📚</span>
-                    <h3 class="feature-title">Complete Documentation</h3>
-                    <p class="feature-description">Comprehensive user guides, workflow suggestions, and interactive tool tips throughout the app. Built for teams to get productive from day one.</p>
+                    <span class="feature-icon">⚡</span>
+                    <h3 class="feature-title">Automation Engine</h3>
+                    <p class="feature-description">Smart rules, scheduled tasks, and integrations with Slack, email, GitHub, and custom webhooks. Proven 98.5% success rate.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="stats">
+    <section class="screenshots" id="platform">
         <div class="container">
-            <div class="stats-grid">
-                <div class="stat animate-on-scroll">
-                    <span class="stat-number">60%</span>
-                    <span class="stat-label">Reduction in Manual Triage</span>
-                </div>
-                <div class="stat animate-on-scroll">
-                    <span class="stat-number">25%</span>
-                    <span class="stat-label">Budget Overrun Prevention</span>
-                </div>
-                <div class="stat animate-on-scroll">
-                    <span class="stat-number">40%</span>
-                    <span class="stat-label">Fewer Repeat Bugs</span>
-                </div>
-                <div class="stat animate-on-scroll">
-                    <span class="stat-number">80%</span>
-                    <span class="stat-label">Faster Reporting</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="gallery" id="gallery">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">See It In Action</h2>
-            <p class="section-subtitle animate-on-scroll">Real screenshots from our Game Analysis System in production</p>
+            <h2 class="section-title animate-on-scroll">Platform Capabilities</h2>
+            <p class="section-subtitle animate-on-scroll">See the enterprise-grade features that power predictive business intelligence</p>
             
-            <div class="gallery-grid">
-                <div class="gallery-item animate-on-scroll">
-                    <img src="Screenshot 2025-07-14 231120.png" alt="Game Analysis Dashboard Overview" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Dashboard Overview</h3>
-                        <p>Executive KPI dashboard showing real-time project health metrics</p>
-                    </div>
+            <div class="screenshots-grid">
+                <div class="screenshot-item animate-on-scroll">
+                    <img src="image2.png" alt="Data Processing Settings with validation and caching options" />
+                    <h3 class="screenshot-title">Data Processing Engine</h3>
+                    <p class="screenshot-description">Advanced data validation, caching, and batch processing for enterprise-scale operations</p>
                 </div>
                 
-                <div class="gallery-item animate-on-scroll">
-                    <img src="Screenshot 2025-07-14 113203.png" alt="Bug Analysis Interface" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Bug Analysis</h3>
-                        <p>AI-powered bug categorization and priority assignment</p>
-                    </div>
+                <div class="screenshot-item animate-on-scroll">
+                    <img src="image3.png" alt="Automation and Workflows with smart rules and duplicate detection" />
+                    <h3 class="screenshot-title">Smart Automation</h3>
+                    <p class="screenshot-description">Intelligent workflows with duplicate detection, custom rules, and automated notifications</p>
                 </div>
                 
-                <div class="gallery-item animate-on-scroll">
-                    <img src="Screenshot 2025-07-14 113221.png" alt="Root Cause Analysis" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Root Cause Analysis</h3>
-                        <p>Intelligent pattern recognition for preventing repeat issues</p>
-                    </div>
+                <div class="screenshot-item animate-on-scroll">
+                    <img src="image4.png" alt="Scheduled Tasks showing daily and weekly automation" />
+                    <h3 class="screenshot-title">Automated Scheduling</h3>
+                    <p class="screenshot-description">Scheduled reports, analytics, and integrations with Slack, email, and external systems</p>
                 </div>
                 
-                <div class="gallery-item animate-on-scroll">
-                    <img src="Screenshot 2025-07-14 113243.png" alt="Reporting System" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>One-Click Reports</h3>
-                        <p>Professional HTML reports generated instantly</p>
-                    </div>
+                <div class="screenshot-item animate-on-scroll">
+                    <img src="image6.png" alt="AI Model Training interface with data management" />
+                    <h3 class="screenshot-title">AI Model Training</h3>
+                    <p class="screenshot-description">Custom ML model training for bug classification, risk prediction, and anomaly detection</p>
                 </div>
                 
-                <div class="gallery-item animate-on-scroll">
-                    <img src="Screenshot 2025-07-14 192405.png" alt="Budget Analysis" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Budget Optimization</h3>
-                        <p>AI-powered budget analysis and cost prediction tools</p>
-                    </div>
+                <div class="screenshot-item animate-on-scroll">
+                    <img src="image9.png" alt="Budget Analysis with comprehensive project context" />
+                    <h3 class="screenshot-title">Budget Intelligence</h3>
+                    <p class="screenshot-description">AI-powered budget analysis, forecasting, and optimization with project context</p>
                 </div>
                 
-                <div class="gallery-item animate-on-scroll">
-                    <img src="Screenshot 2025-07-14 222957.png" alt="Data Integration" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Data Integration</h3>
-                        <p>Seamless JIRA and CSV integration for existing workflows</p>
-                    </div>
-                </div>
-                
-                <div class="gallery-item animate-on-scroll">
-                    <img src="Screenshot 2025-07-14 114408.png" alt="Analytics Dashboard" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Advanced Analytics</h3>
-                        <p>Deep insights and trend analysis for better decision making</p>
-                    </div>
-                </div>
-                
-                <div class="gallery-item animate-on-scroll">
-                    <img src="Screenshot 2025-07-14 231039.png" alt="System Configuration" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>System Configuration</h3>
-                        <p>Flexible setup options tailored to your studio's needs</p>
-                    </div>
+                <div class="screenshot-item animate-on-scroll">
+                    <img src="image14.png" alt="AI Analysis with pre-built prompts for business intelligence" />
+                    <h3 class="screenshot-title">AI Analysis Hub</h3>
+                    <p class="screenshot-description">50+ validated prompt templates for risk assessment, budget forecasting, and stakeholder reporting</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="videos" id="videos">
+    <section class="roi">
         <div class="container">
-            <h2 class="section-title animate-on-scroll">Watch It In Action</h2>
-            <p class="section-subtitle animate-on-scroll">See live demonstrations of our Game Analysis System</p>
-            
-            <div class="videos-grid">
-                <div class="video-item animate-on-scroll">
-                    <div class="video-wrapper">
-                        <iframe 
-                            src="https://www.youtube.com/embed/TeW2XX4OqFU" 
-                            title="Game Analysis System Demo 1"
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="video-info">
-                        <h3>System Overview & Features</h3>
-                        <p>Complete walkthrough of the Game Analysis System's core functionality and user interface</p>
-                    </div>
+            <div class="roi-grid">
+                <div class="roi-item animate-on-scroll">
+                    <h3>$1.5M-3.3M</h3>
+                    <p>Annual Customer Value<br>Validated ROI from risk prevention and optimization</p>
                 </div>
-                
-                <div class="video-item animate-on-scroll">
-                    <div class="video-wrapper">
-                        <iframe 
-                            src="https://www.youtube.com/embed/44Jo2Yd1Uio" 
-                            title="Game Analysis System Demo 2"
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="video-info">
-                        <h3>AI-Powered Bug Analysis</h3>
-                        <p>Live demonstration of automated bug categorization and root cause analysis features</p>
-                    </div>
+                <div class="roi-item animate-on-scroll">
+                    <h3>450-850%</h3>
+                    <p>Customer ROI<br>Proven returns through budget anomaly prevention</p>
                 </div>
-                
-                <div class="video-item animate-on-scroll">
-                    <div class="video-wrapper">
-                        <iframe 
-                            src="https://www.youtube.com/embed/0pRsilVBbJc" 
-                            title="Game Analysis System Demo 3"
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="video-info">
-                        <h3>Reporting & Dashboard Features</h3>
-                        <p>Executive dashboards, KPI tracking, and one-click HTML report generation in action</p>
-                    </div>
+                <div class="roi-item animate-on-scroll">
+                    <h3>$400M+</h3>
+                    <p>Revenue Potential<br>Conservative projection by Year 5</p>
+                </div>
+                <div class="roi-item animate-on-scroll">
+                    <h3>18 Months</h3>
+                    <p>Development Lead<br>First-mover advantage with patent-pending tech</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="pricing" id="pricing">
+    <section class="acquisition" id="acquisition">
         <div class="container">
-            <h2 class="section-title animate-on-scroll">Investment Opportunity</h2>
-            <p class="section-subtitle animate-on-scroll">Low-risk, high-reward partnership model</p>
+            <h2 class="animate-on-scroll">Technology Acquisition Opportunity</h2>
+            <p class="animate-on-scroll">Complete platform rights with validated business intelligence capabilities</p>
             
-            <div class="pricing-card animate-on-scroll">
-                <div class="pricing-badge">Partnership Deal</div>
-                <div class="pricing-price">$275K</div>
-                <p>Initial investment + 7.5% net revenue share</p>
+            <div class="pricing-box animate-on-scroll">
+                <div class="pricing-badge">Strategic Partnership</div>
+                <div class="pricing-price">$85K</div>
+                <p style="margin-bottom: 2rem;">+ 7.5% Lifetime Value Participation</p>
                 
-                <ul class="pricing-features">
-                    <li>Complete Game Analysis System ownership</li>
-                    <li>Lifetime development support included</li>
-                    <li>Ongoing bug fixes & feature enhancements</li>
-                    <li>Fully documented user guides & tutorials</li>
-                    <li>Built-in workflow suggestions & best practices</li>
-                    <li>Interactive tool tips throughout the app</li>
-                    <li>AI-powered bug analysis & reporting</li>
-                    <li>Executive dashboards & KPI tracking</li>
-                    <li>JIRA & CSV integration</li>
-                    <li>One-click HTML reports</li>
-                    <li>Root cause analysis engine</li>
-                    <li>Budget optimization tools</li>
-                    <li>Continuous integration support</li>
-                    <li>Priority technical support</li>
-                    <li>Custom enhancement development</li>
-                </ul>
+                <div class="pricing-details">
+                    <h4 style="margin-bottom: 1rem;">Complete Technology Package:</h4>
+                    <ul>
+                        <li>Full source code and IP ownership</li>
+                        <li>AAA gaming validation case study</li>
+                        <li>50+ validated AI prompt templates</li>
+                        <li>Universal AI gateway (patent-pending)</li>
+                        <li>Enterprise integration modules</li>
+                        <li>ML analytics framework</li>
+                        <li>Complete documentation and architecture</li>
+                    </ul>
+                    
+                    <h4 style="margin: 2rem 0 1rem 0;">Lifetime Partnership:</h4>
+                    <ul>
+                        <li>7.5% of net profits after expenses</li>
+                        <li>7.5% of sale proceeds if acquired</li>
+                        <li>7.5% equity if platform goes public</li>
+                        <li>Ongoing technical support and innovation</li>
+                        <li>Platform evolution and optimization</li>
+                    </ul>
+                </div>
                 
                 <div style="margin: 2rem 0; padding: 1.5rem; background: rgba(99, 102, 241, 0.1); border-radius: 12px; border-left: 4px solid var(--primary);">
-                    <p style="font-weight: 600; margin-bottom: 0.5rem;">✅ Low-Risk Partnership Model</p>
-                    <p style="font-size: 0.9rem; color: var(--gray);">All ongoing development, bug fixes, and feature enhancements included with your 7.5% net revenue share — no additional costs or hidden fees.</p>
+                    <p style="font-weight: 600; margin-bottom: 0.5rem;">✅ Immediate Competitive Advantage</p>
+                    <p style="font-size: 0.9rem; color: var(--gray);">Skip $240K-480K development costs and 18+ months of uncertain development. Proven validation with AAA gaming industry.</p>
                 </div>
                 
-                <a href="#contact" class="btn btn-primary">Schedule Partnership Discussion</a>
+                <a href="mailto:kennethdavis@ndarainent.com" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.5rem 3rem;">Schedule Acquisition Discussion</a>
             </div>
         </div>
     </section>
 
-    <section class="features" id="contact">
+    <section class="contact">
         <div class="container">
-            <h2 class="section-title animate-on-scroll">Ready to Partner With Us?</h2>
-            <p class="section-subtitle animate-on-scroll">Join our low-risk, high-reward partnership model with lifetime development support</p>
-            
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="mailto:contact@ndarain.com" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.5rem 3rem;">Schedule Partnership Discussion</a>
+            <div class="contact-info animate-on-scroll">
+                <h3>Ready to Secure This Technology?</h3>
+                <p style="margin: 1rem 0;">Multiple strategic buyers are evaluating this opportunity</p>
+                <p><strong>Kenneth Davis</strong><br>
+                Founder & CTO, N Da Rain Technologies LLC</p>
+                <p>📧 <a href="mailto:kennethdavis@ndarainent.com">kennethdavis@ndarainent.com</a></p>
+                <p style="margin-top: 2rem; font-size: 0.9rem; color: var(--gray);">
+                    Private demos and technical documentation available upon NDA execution<br>
+                    Decision timeline: 45 days
+                </p>
             </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Game Analysis System</h3>
-                    <p>AI-powered insights for game development studios. Built by QA professionals, for QA professionals.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <p><a href="#features">Features</a></p>
-                    <p><a href="#pricing">Pricing</a></p>
-                    <p><a href="mailto:contact@ndarain.com">Contact</a></p>
-                </div>
-                <div class="footer-section">
-                    <h3>Resources</h3>
-                    <p><a href="#">Documentation</a></p>
-                    <p><a href="#">Support</a></p>
-                    <p><a href="#">Case Studies</a></p>
-                </div>
-            </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 N Da Rain Technologies LLC — All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Animate elements on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animated');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.animate-on-scroll').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Create floating particles
-        function createParticle() {
-            const particle = document.createElement('div');
-            particle.className = 'particle';
-            
-            const size = Math.random() * 4 + 2;
-            particle.style.width = size + 'px';
-            particle.style.height = size + 'px';
-            particle.style.left = Math.random() * 100 + '%';
-            particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
-            particle.style.animationDelay = Math.random() * 5 + 's';
-            
-            document.getElementById('particles').appendChild(particle);
-            
-            setTimeout(() => {
-                particle.remove();
-            }, 15000);
-        }
-
-        // Generate particles periodically
-        setInterval(createParticle, 2000);
-
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('.header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(255, 255, 255, 0.98)';
-                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-            } else {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-                header.style.boxShadow = 'none';
-            }
-        });
-
-        // Gallery modal functionality
-        const galleryItems = document.querySelectorAll('.gallery-item');
-        const modal = document.createElement('div');
-        modal.className = 'modal';
-        modal.innerHTML = `
-            <span class="modal-close">&times;</span>
-            <div class="modal-content">
-                <img src="" alt="">
-            </div>
-        `;
-        document.body.appendChild(modal);
-
-        const modalImg = modal.querySelector('img');
-        const modalClose = modal.querySelector('.modal-close');
-
-        galleryItems.forEach(item => {
-            item.addEventListener('click', () => {
-                const img = item.querySelector('img');
-                modalImg.src = img.src;
-                modalImg.alt = img.alt;
-                modal.style.display = 'block';
-                document.body.style.overflow = 'hidden';
-            });
-        });
-
-        modalClose.addEventListener('click', () => {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        });
-
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
-        });
-
-        // Close modal with Escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && modal.style.display === 'block') {
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
-        });
-    </script>
-</body>
-</html>
+                <p>&copy; 2025 N Da Rain Technologies LLC — Agile Lens Technology Platform</p>
+                <p>AAA
