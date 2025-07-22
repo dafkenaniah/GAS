@@ -266,6 +266,48 @@
             border: none;
         }
 
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pitch-deck {
+            padding: 6rem 0;
+            background: var(--light);
+        }
+
+        .deck-content {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2rem 3rem;
+            box-shadow: var(--shadow);
+            margin-top: 3rem;
+            text-align: left;
+        }
+
+        .deck-content h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-dark);
+        }
+
+        .deck-content h4 {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .deck-content ul {
+            list-style-position: inside;
+            padding-left: 1rem;
+        }
+
         /* Screenshots Gallery */
         .screenshots {
             padding: 6rem 0;
@@ -648,18 +690,298 @@
         </div>
     </section>
 
-    <section class="video-section">
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Platform Features</h2>
+            <p class="section-subtitle animate-on-scroll">A comprehensive suite of tools for AI-powered project intelligence</p>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <h3 class="feature-title">Comprehensive Priority Reports</h3>
+                    <p class="feature-description">Generate, filter, and export detailed JIRA bug reports in HTML, CSV, PDF, JSON, or Image formats.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <h3 class="feature-title">Advanced AI Analysis</h3>
+                    <p class="feature-description">Compare reports for net changes, new/resolved issues, and status changes. Multi-report analysis with pre-built prompts (Executive, Technical, QA, Trend, Risk).</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <h3 class="feature-title">Advanced AI Research Prompts</h3>
+                    <p class="feature-description">Explore the potential of powerful prompts like "Company Saver Analysis," "ROI Maximizer Engine," "Strategic Oracle," "Efficiency Surgeon," "Risk Prophet," and "Innovation Catalyst" – showcasing the AI's capacity for profound strategic inquiry.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <h3 class="feature-title">Intelligent Budget Analysis</h3>
+                    <p class="feature-description">Import diverse financial data (Excel, CSV, PDF, JSON) for ML-driven insights, anomaly detection, and forecasting.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <h3 class="feature-title">JIRA & TestRail Integration</h3>
+                    <p class="feature-description">Seamlessly export JIRA issues to CSV and create TestRail test plans and runs with advanced configurations and template systems.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <h3 class="feature-title">Internal Automation</h3>
+                    <p class="feature-description">Smart rules and scheduled tasks for report generation, analytics delivery, and more, streamlining internal app workflows.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <h3 class="feature-title">JQL Creator with AI</h3>
+                    <p class="feature-description">Build and validate JQL queries with AI suggestions for optimal performance and easy data retrieval.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <h3 class="feature-title">File Converter</h3>
+                    <p class="feature-description">Conveniently convert various document types (PDF, DOCX, Excel, CSV) to structured JSON format.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <h3 class="feature-title">Robust Backend</h3>
+                    <p class="feature-description">Features like AI Training for custom model management (including model retraining), comprehensive Analytics (predictive analysis, root cause, team efficiency), and detailed Logs & Debug tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pitch-deck" id="pitch-deck">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Strategic Acquisition Pitch Deck</h2>
+            <p class="section-subtitle animate-on-scroll">Transformative AI for Enterprise Project Management</p>
+            <div class="deck-content animate-on-scroll">
+                <h3>Agile Lens (AL): The Future of AI-Powered Project Intelligence</h3>
+                <h4>Strategic Acquisition Opportunity: Transformative AI for Enterprise Project Management</h4>
+                
+                <h3>Slide 1: Title Slide</h3>
+                <h4>Agile Lens (AL): AI-Powered Project Intelligence Platform</h4>
+                <p>Validated Risk Management & Bug Analysis Engine</p>
+                <ul>
+                    <li>AAA Gaming Industry Proven</li>
+                    <li>Enterprise-Ready</li>
+                    <li>Strategic Acquisition Opportunity</li>
+                    <li>10,000+ Bug Dataset Tested</li>
+                    <li>Predictive Insights Confirmed</li>
+                    <li>Budget Anomalies Detected</li>
+                </ul>
+
+                <h3>Slide 2: Executive Summary - Proven Technology Acquisition</h3>
+                <p>Agile Lens (AL) is the world's first AI-powered platform that transforms complex project and bug data into actionable business intelligence.</p>
+                <p>Built by Kenneth Davis at N Da Rain Technologies LLC in just 3 months, showcasing unparalleled efficiency and expertise.</p>
+                <p>Enterprise-Ready Solution: Battle-tested with 10,000+ bugs from AAA gaming titles and proven to work with real JIRA and TestRail API calls. It leverages advanced Machine Learning (ML) and Large Language Models (LLMs), capable of continuous model retraining.</p>
+                <p>This isn't theoretical AI – it's a living system designed to provide deep insights and streamline operations, preventing multi-million dollar project overruns.</p>
+                <p>Strategic Opportunity: Acquire a proven, de-risked technology platform for $115,000 upfront + 7.5% lifetime value participation, effectively skipping $2M+ in development costs and 18+ months of uncertain R&D.</p>
+
+                <h3>Slide 3: The Problem - The Blind Spots in Project Management</h3>
+                <p>Traditional project management and QA tools offer basic reporting but fall short in providing the deep, predictive intelligence needed in today's complex enterprise environments:</p>
+                <ul>
+                    <li>Reactive Management: Teams constantly react to issues instead of proactively preventing them, leading to costly firefighting.</li>
+                    <li>Budget Overruns: Difficulty in predicting and controlling project costs results in significant financial losses.</li>
+                    <li>Data Overload, Insight Poverty: Despite abundant JIRA data, critical business intelligence remains hidden.</li>
+                    <li>Inefficient Querying: Complex JQL queries are a barrier for many users, slowing down essential data extraction.</li>
+                    <li>Manual Processes: Repetitive tasks and data transformations consume valuable time and introduce errors.</li>
+                </ul>
+
+                <h3>Slide 4: The Agile Lens Solution - Intelligent, Proactive Project Control</h3>
+                <p>Agile Lens (AL) is a comprehensive desktop application that integrates seamlessly with JIRA and TestRail, leveraging cutting-edge ML and LLMs to deliver predictive insights and streamline workflows.</p>
+                <h4>Our Core AI Capabilities:</h4>
+                <ul>
+                    <li>AI-Powered Priority Report Analysis: Intelligent classification (Class A/B/C) and deep insights into bug reports, driven by ML.</li>
+                    <li>AI Budget Analysis (ML-Powered): Advanced Machine Learning detects cost anomalies, forecasts spending, and recommends optimizations.</li>
+                    <li>AI-Powered JQL Helper: An intuitive JQL query builder with intelligent AI suggestions, making complex data extraction effortless for all users.</li>
+                    <li>ML for Bug Data: Machine Learning for in-depth analysis of bug trends, patterns, and predictions, compiling these into actionable reports.</li>
+                </ul>
+
+                <h3>Slide 5: Proven Validation & Enterprise Readiness</h3>
+                <p>Agile Lens isn't just a concept; it's a battle-tested platform engineered for enterprise demands and continuous improvement.</p>
+                <h4>Real-World Testing & Validation:</h4>
+                <ul>
+                    <li>AAA Gaming Industry Validated: Proven with a complex 10,000+ bug dataset from AAA gaming titles, confirming real-world efficacy.</li>
+                    <li>Real JIRA & TestRail API Calls: Extensively tested with live API calls, ensuring robust integration and reliability in production environments.</li>
+                    <li>Risk Prediction Confirmed: AI successfully predicted problem areas from historical cycles, demonstrating its predictive power.</li>
+                    <li>Budget Anomaly Detection: Validated ability to identify cost overruns and resource allocation issues.</li>
+                    <li>Enterprise Scalability: Demonstrated performance with production-level data volumes and complex organizational structures.</li>
+                </ul>
+                <h4>What This Validation Proves:</h4>
+                <ul>
+                    <li>Technical Capabilities: AI prompts deliver actionable business insights; handles enterprise-scale data; universal AI gateway performs under production loads.</li>
+                    <li>Business Value: Prevents budget overruns; optimizes resource allocation; delivers predictive insights; transforms raw data into strategic intelligence.</li>
+                </ul>
+
+                <h3>Slide 6: Key Features - Built for Efficiency & Intelligence</h3>
+                <p>Agile Lens is packed with features designed to empower project teams and leadership:</p>
+                <ul>
+                    <li>Comprehensive Priority Reports: Generate, filter, and export detailed JIRA bug reports in HTML, CSV, PDF, JSON, or Image formats.</li>
+                    <li>Advanced AI Analysis: Compare reports for net changes, new/resolved issues, and status changes. Multi-report analysis with pre-built prompts (Executive, Technical, QA, Trend, Risk).</li>
+                    <li>Advanced AI Research Prompts: Explore the potential of powerful prompts like "Company Saver Analysis," "ROI Maximizer Engine," "Strategic Oracle," "Efficiency Surgeon," "Risk Prophet," and "Innovation Catalyst" – showcasing the AI's capacity for profound strategic inquiry.</li>
+                    <li>Intelligent Budget Analysis: Import diverse financial data (Excel, CSV, PDF, JSON) for ML-driven insights, anomaly detection, and forecasting.</li>
+                    <li>JIRA & TestRail Integration: Seamlessly export JIRA issues to CSV and create TestRail test plans and runs with advanced configurations and template systems.</li>
+                    <li>Internal Automation: Smart rules and scheduled tasks for report generation, analytics delivery, and more, streamlining internal app workflows.</li>
+                    <li>JQL Creator with AI: Build and validate JQL queries with AI suggestions for optimal performance and easy data retrieval.</li>
+                    <li>File Converter: Conveniently convert various document types (PDF, DOCX, Excel, CSV) to structured JSON format.</li>
+                    <li>Robust Backend: Features like AI Training for custom model management (including model retraining), comprehensive Analytics (predictive analysis, root cause, team efficiency), and detailed Logs & Debug tools.</li>
+                </ul>
+
+                <h3>Slide 7: The Strategic Advantage: Why Acquire Agile Lens?</h3>
+                <p>Acquiring Agile Lens is not just a purchase; it's a strategic acceleration of your market position.</p>
+                <ul>
+                    <li>Unparalleled Time-to-Market: Skip 18+ months of uncertain development and gain immediate market entry with a fully functional, validated platform. You get a ready-to-deploy solution that's been proven with real JIRA and TestRail API calls.</li>
+                    <li>Exceptional Cost Efficiency: Acquire this cutting-edge solution for a fraction of the $2M+ it would cost to build internally, saving significant engineering salaries and overhead. The $115,000 upfront is a minimal investment for the value.</li>
+                    <li>Massive Risk Reduction: Eliminate the technical, market, and execution risks associated with new product development. You acquire a proven, stable, and perpetually supported asset.</li>
+                    <li>Competitive Moat: Gain a patent-pending AI architecture (Universal AI Gateway, Validated Prompt Engineering, combined ML+LLM methods) that creates a defensible market position.</li>
+                    <li>Integrated Expertise: Leverage Kenneth Davis's specialized AI/ML and enterprise architecture expertise, built into the platform and available for ongoing support.</li>
+                </ul>
+
+                <h3>Slide 8: The Unique Partnership Offer</h3>
+                <p>This acquisition is structured for mutual, long-term success, ensuring continuous innovation and aligned incentives.</p>
+                <h4>Acquisition Terms:</h4>
+                <ul>
+                    <li>Technology Platform Rights: $115,000 for complete ownership and transfer of full source code, validated AI libraries, comprehensive documentation, and the patent-pending Universal AI Gateway.</li>
+                    <li>Lifetime Value Participation: 7.5% of net profits (after expenses), 7.5% of sale proceeds if the platform is acquired, and 7.5% stock value if the platform company goes public.</li>
+                </ul>
+                <h4>Secure Our Partnership's Success:</h4>
+                <p>The 7.5% Lifetime Value Participation is not just profit sharing; it's a commitment to ongoing technical guidance and platform evolution support from the creator.</p>
+                <p>You gain access to future upgrades and strategic enhancements (e.g., duplicate bug detection automation as a future add-on) that will continuously enhance the platform's value and secure your market position.</p>
+                <p>This ensures aligned incentives for continuous innovation and guarantees the long-term success of the Agile Lens platform within your portfolio, transforming it into a self-improving asset through model retraining.</p>
+
+                <h3>Slide 9: Market Opportunity & Competitive Edge</h3>
+                <p>Agile Lens operates in a "Blue Ocean" market, combining unique capabilities that existing solutions lack.</p>
+                <h4>Target Market Expansion:</h4>
+                <ul>
+                    <li>Primary Markets (Validated Demand): Enterprise Software Development ($4.2B), Gaming Industry ($180B), Financial Services, Healthcare Technology.</li>
+                    <li>New Market Categories: Project Management Offices, Enterprise Finance Teams, Management Consulting, Risk Management Departments.</li>
+                </ul>
+                <h4>Competitive Landscape: No Direct Competition</h4>
+                <ul>
+                    <li>JIRA/TestRail: Basic reporting, no AI/ML insights, no predictive capabilities.</li>
+                    <li>Traditional BI Tools: Generic analytics, no bug-specific intelligence.</li>
+                    <li>Project Management Tools: Manual processes, no AI-powered risk prediction.</li>
+                    <li>Custom Solutions: $2M+ investment, 18+ months development, unproven results.</li>
+                </ul>
+                <p>Agile Lens Advantage: The ONLY platform combining deep bug analysis, predictive risk, and intelligent budget insights with enterprise-grade ML + LLM AI and perpetual expert support.</p>
+
+                <h3>Slide 10: Customer ROI: Validated Business Case</h3>
+                <p>Agile Lens delivers quantifiable returns by preventing overruns and optimizing operations.</p>
+                <h4>Fortune 500 Enterprise Example (200 developers, $20M annual dev budget):</h4>
+                <ul>
+                    <li>Total Annual Value: $3.3M (from budget anomaly prevention, early risk detection, resource optimization, quality improvements).</li>
+                    <li>Annual Investment: ~$350K (platform + implementation).</li>
+                    <li>ROI: 843%</li>
+                </ul>
+                <h4>Mid-Market Studio Example (50 developers, $5M budget):</h4>
+                <ul>
+                    <li>Total Annual Value: $825K (similar benefits scaled down).</li>
+                    <li>Annual Investment: ~$150K (platform).</li>
+                    <li>ROI: 450%</li>
+                </ul>
+
+                <h3>Slide 11: Technical Architecture: Enterprise-Ready & Secure</h3>
+                <p>Built for reliability, scalability, and seamless integration into enterprise environments.</p>
+                <h4>Proven Platform Components:</h4>
+                <ul>
+                    <li>Frontend: Electron desktop application (Windows/Mac, no browser required).</li>
+                    <li>AI Gateway: Universal LLM integration (OpenAI, Anthropic, Gemini, Azure, custom LLMs) with provider abstraction layer.</li>
+                    <li>Analytics Engine: Python-based ML backend with extensible framework.</li>
+                    <li>Enterprise Integration: Native JIRA, TestRail, CSV processing, JSON converter.</li>
+                    <li>Security: Local data storage, HTTPS-only communication, SOC2 ready framework.</li>
+                </ul>
+                <h4>Validation Metrics:</h4>
+                <ul>
+                    <li>Data Processing: 10,000+ bugs successfully analyzed.</li>
+                    <li>Performance: Real-time analysis of complex enterprise datasets.</li>
+                    <li>Reliability: Stable operation under production workloads.</li>
+                    <li>Accuracy: Validated risk predictions and budget/bug anomaly detection (ML-driven).</li>
+                    <li>Scalability: Designed for enterprise-grade performance with large data volumes.</li>
+                </ul>
+
+                <h3>Slide 12: Implementation Roadmap: 90-Day Market Entry</h3>
+                <p>A clear path to rapidly integrate Agile Lens and leverage its capabilities.</p>
+                <h4>Phase 1: Platform Acquisition & Setup (30 days)</h4>
+                <ul>
+                    <li>Complete technology transfer, IP documentation, and technical team onboarding.</li>
+                    <li>Initial customization for buyer's infrastructure & branding.</li>
+                    <li>AAA case study development for sales enablement.</li>
+                </ul>
+                <h4>Phase 2: Market Validation & Early Sales (60 days)</h4>
+                <ul>
+                    <li>Enterprise pilot program with 3-5 target customers.</li>
+                    <li>Sales team training & demo environment setup.</li>
+                    <li>Strategic partnership discussions with DevOps tool vendors.</li>
+                </ul>
+                <h4>Phase 3: Scale Preparation & Growth (90 days)</h4>
+                <ul>
+                    <li>Customer onboarding automation & support infrastructure.</li>
+                    <li>Advanced feature development roadmap (e.g., Duplicate Bug Detection add-on).</li>
+                    <li>Marketing campaign launch with validated messaging.</li>
+                </ul>
+
+                <h3>Slide 13: Competitive Timeline & Next Steps</h3>
+                <p>The market window for AI-powered project intelligence is closing. Act fast to secure your first-mover advantage.</p>
+                <h4>Market Window:</h4>
+                <ul>
+                    <li>Q1 2025: Microsoft & Atlassian announcing AI risk management initiatives.</li>
+                    <li>Q2 2025: First copycat solutions with basic capabilities entering market.</li>
+                    <li>Q3 2025: First-mover advantage begins eroding.</li>
+                    <li>Q4 2025: Established players release competing features.</li>
+                </ul>
+                <h4>Decision Timeline: 45 Days</h4>
+                <p>Kenneth is fielding multiple inquiries from strategic buyers.</p>
+                <ul>
+                    <li>Week 1-2: Technical due diligence and AAA validation review.</li>
+                    <li>Week 3-4: Customer pilot discussions and market analysis.</li>
+                    <li>Week 5-6: Term negotiation and final decision.</li>
+                    <li>Week 7: Legal documentation and technology transfer.</li>
+                </ul>
+                <h4>Immediate Actions Required:</h4>
+                <ul>
+                    <li>Execute NDA for complete technical documentation and AAA case study.</li>
+                    <li>Schedule Platform Demo with Kenneth (private YouTube demos available).</li>
+                    <li>Review AAA Validation Results and technical performance metrics.</li>
+                    <li>Initiate Customer Pilot with your target enterprise prospects.</li>
+                    <li>Legal and IP Due Diligence for clean technology transfer.</li>
+                </ul>
+
+                <h3>Slide 14: The Acquisition Opportunity - Secure Your Future</h3>
+                <h4>Kenneth's Terms:</h4>
+                <ul>
+                    <li>Technology Platform Rights: $115,000 for complete ownership transfer.</li>
+                    <li>Lifetime Value Participation: 7.5% of profits, exits, and IPO proceeds, includes ongoing technical partnership and innovation support.</li>
+                </ul>
+                <p>Clean Technology Transfer: No operational complexity or customer conflicts.</p>
+                <h4>Buyer Investment Summary:</h4>
+                <ul>
+                    <li>Initial Technology Cost: $115K (vs. $2M+ to build equivalent).</li>
+                    <li>Time to Market: Immediate (vs. 18+ months development).</li>
+                    <li>Market Risk: Minimal (proven validation vs. uncertain development).</li>
+                    <li>Competitive Position: First-mover advantage with defensible technology.</li>
+                </ul>
+                <h4>Risk Assessment: Low-Risk, High-Reward</h4>
+                <ul>
+                    <li>✅ Technical Risk: AAA testing proves platform capabilities.</li>
+                    <li>✅ Market Risk: Validated demand and business value demonstrated.</li>
+                    <li>✅ Competitive Risk: 18-month lead and patent-pending technology.</li>
+                    <li>✅ Execution Risk: Kenneth's ongoing support ensures continuity.</li>
+                </ul>
+
+                <h3>Slide 15: Contact Information & Call to Action</h3>
+                <p>Secure This Opportunity Today.</p>
+                <p>This opportunity represents the intersection of proven technology, validated market demand, and exceptional financial returns. The first strategic buyer to commit secures the future of AI-powered project risk management.</p>
+                <p>Kenneth Davis<br>Founder & CTO, N Da Rain Technologies LLC</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section" id="videos">
         <div class="container">
             <h2 class="section-title animate-on-scroll">See It In Action</h2>
             <p class="section-subtitle animate-on-scroll">Watch the full platform demonstration and capabilities</p>
             
-            <div class="video-container animate-on-scroll">
-                <iframe src="https://www.youtube.com/embed/9Da6s_WuSzI" 
-                        title="Agile Lens Platform Demo" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                </iframe>
+            <div class="videos-grid">
+                <div class="video-container animate-on-scroll">
+                    <iframe src="https://www.youtube.com/embed/-xBVPGcEtU8" title="Agile Lens Demo 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container animate-on-scroll">
+                    <iframe src="https://www.youtube.com/embed/ZyBY96Qrukw" title="Agile Lens Demo 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container animate-on-scroll">
+                    <iframe src="https://www.youtube.com/embed/HK42R32845Q" title="Agile Lens Demo 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container animate-on-scroll">
+                    <iframe src="https://www.youtube.com/embed/z0lUh344OV0" title="Agile Lens Demo 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container animate-on-scroll">
+                    <iframe src="https://www.youtube.com/embed/9Da6s_WuSzI" title="Agile Lens Demo 5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </section>
